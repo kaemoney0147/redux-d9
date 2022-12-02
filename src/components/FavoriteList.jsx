@@ -39,9 +39,6 @@ export default function Favs() {
                         Company Name: {job.data.company_name}
                       </Link>
                     </Col>
-                    <Col>
-                      <a href={job.data.url}>Link</a>
-                    </Col>
                   </Row>
                 </Col>
               </Row>

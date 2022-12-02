@@ -27,7 +27,7 @@ const Job = ({ data }) => {
             })
           }
         >
-          Add to Fav
+          ADD TO FOVERITE
         </Button>
       </Col>
     </Row>
