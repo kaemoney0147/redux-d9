@@ -1,5 +1,5 @@
 const initialState = {
-    content: [],
+  content: [],
 };
 
 const mainReducer = (state = initialState, action) => {
@@ -7,14 +7,14 @@ const mainReducer = (state = initialState, action) => {
     case "ADD_FAVORITE-COMPANY":
       return {
         ...state,
-          content: [...state.content, action.payload],
+        content: [...state.content, action.payload.data],
       };
     case "REMOVE_FROM_FAVS":
       return {
-          ...state,
-          content: state.content.filter((job, i) => {
-            return i !== action.payload;
-          }),
+        ...state,
+        content: state.content.filter((job, i) => {
+          return i !== action.payload;
+        }),
       };
     default:
       return state;

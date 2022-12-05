@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 // import { FaTrash } from "react-icons/fa";
 
 export default function Favs() {
-  const favoriteCompany = useSelector((state) => state.favorite.content)
+  const jobs = useSelector((state) => state.favorite.content);
   const dispatch = useDispatch();
 
   return (
@@ -15,7 +15,7 @@ export default function Favs() {
         <h1> Favorites</h1>
         <Col sm={12}>
           <ul style={{ listStyle: "none" }}>
-            {favoriteCompany.map((job, i) => (
+            {jobs.map((job, i) => (
               <Row key={i} className="my-4 align-items-center">
                 <Col xs={1}>
                   <Button

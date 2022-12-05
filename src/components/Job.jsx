@@ -1,9 +1,11 @@
 import { Row, Col, Button } from "react-bootstrap";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Job = ({ data }) => {
   const dispatch = useDispatch();
+  const state = useSelector((state) => state);
+  console.log("state", state);
 
   return (
     <Row
